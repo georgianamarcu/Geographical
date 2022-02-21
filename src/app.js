@@ -10,6 +10,12 @@ let tempButton = document.querySelector(".tempButton")
 //Display initial static map
 showMap();
 
+
+
+
+
+console.log('hello jojo')
+
 //Temperature button: hidden in the beginning
 tempButton.insertAdjacentHTML(
     "beforeend",
