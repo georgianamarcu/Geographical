@@ -10,12 +10,6 @@ let tempButton = document.querySelector(".tempButton")
 //Display initial static map
 showMap();
 
-
-
-
-
-console.log('hello jojo')
-
 //Temperature button: hidden in the beginning
 tempButton.insertAdjacentHTML(
     "beforeend",
@@ -33,7 +27,7 @@ button.addEventListener("click", (e) => {
     .then((response) => response.json())
     .then((data) => {
       mapboxgl.accessToken =
-        "pk.eyJ1IjoiZ2VvcmdpYW5hbTIyIiwiYSI6ImNrenFycXQ3bjN1MzAydm55cDBoNDk3aHUifQ.80Tl5qxyL8PzPUwxkSXW5w";
+        "pk.eyJ1IjoiZ2VvcmdpYW5hbTIyIiwiYSI6ImNrenFycXQ3bjN1MzAydm55cDBoNDk3aHUifQ.80Tl5qxyL8PzPUwxkSXW5w"; // <- Edit 2024: VERY BAD PRACTICE OVER HERE, TSK TSK
       const map = new mapboxgl.Map({
         container: "map", // container ID
         style: "mapbox://styles/georgianam22/ckzs7n3k9000315mrwfzo4y7m", // style URL
