@@ -6,7 +6,7 @@ let showMap = () => {
       .then((response) => response.json())
       .then((data) => {
         mapboxgl.accessToken =
-          "pk.eyJ1IjoiZ2VvcmdpYW5hbTIyIiwiYSI6ImNrenFycXQ3bjN1MzAydm55cDBoNDk3aHUifQ.80Tl5qxyL8PzPUwxkSXW5w";
+          "pk.eyJ1IjoiZ2VvcmdpYW5hbTIyIiwiYSI6ImNrenFycXQ3bjN1MzAydm55cDBoNDk3aHUifQ.80Tl5qxyL8PzPUwxkSXW5w"; // <- EDIT 2024: MORE BAD PRACTICE, TSK TSK
         const map = new mapboxgl.Map({
           container: "map", // container ID
           style: "mapbox://styles/georgianam22/ckzs7n3k9000315mrwfzo4y7m", // style URL
